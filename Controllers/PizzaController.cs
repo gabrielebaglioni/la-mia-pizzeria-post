@@ -101,7 +101,7 @@ public class PizzaController : Controller
         Pizza? pizza = new();
         using (var db = new AppContext())
         {
-            pizza = db.Pizzas.FirstOrDefault(x => x.Id == id);
+            pizza = db.Pizzas.First(x => x.Id == id);
         }
 
         return View(pizza);
