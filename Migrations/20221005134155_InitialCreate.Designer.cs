@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace la_mia_pizzeria_post.Migrations
 {
-    [DbContext(typeof(Context))]
+    [DbContext(typeof(AppContext))]
     [Migration("20221005134155_InitialCreate")]
     partial class InitialCreate
     {

@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using la_mia_pizzeria_post.Models;
 using Microsoft.EntityFrameworkCore;
-public class Context : DbContext
+namespace la_mia_pizzeria_post.Context;
+
+public class AppContext : DbContext
 {
     public DbSet<Pizza> Pizzas { get; set; }
-    //public Context()
-    //{
-    //}
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer("Server=localhost;Database=db_pizzeria;User=sa;Password=Scheggia12$;");

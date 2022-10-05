@@ -11,7 +11,7 @@
     "la_mia_pizzeria_post": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:24758",
+      "applicationUrl": "http://localhost:43735",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

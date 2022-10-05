@@ -10,8 +10,8 @@
                     {
                         <div>
                             <div>
-                            
-                                <img style="width:50px;"  src="@pizza.Photo" alt="@pizza.Name" />
+
+                                <img style="width:50px;" src="@pizza.Photo" alt="@pizza.Name" />
                                 <a href="@Url.Action("Show","Pizza", new{ Id = pizza.Id})">
                                     <h3>@pizza.Name</h3>
                                 </a>
@@ -20,7 +20,10 @@
                             </div>
                         </div>
                     }
+                    <button> <a asp-area="" asp-controller="Pizza" asp-action="Create">+</a></button>
+                    
                 }
+
                 else
                 {
                     <h2>The menu is empty</h2>
